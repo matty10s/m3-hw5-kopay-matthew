@@ -1,0 +1,6 @@
+body,h1 {font-family: "Raleway", Arial, sans-serif}
+h1 {letter-spacing: 6px}
+.w3-row-padding img {margin-bottom: 12px}
+section {
+    background-image: url("/images/45degree_fabric.png");
+   }
