@@ -1,62 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
 
 body {
-    margin: 0;
-    font-family: 'Trebuchet MS';
-    background-color: #6a7cf4;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='52' viewBox='0 0 52 52'%3E%3Cpath fill='%23bec9db' fill-opacity='0.06' d='M0 17.83V0h17.83a3 3 0 0 1-5.66 2H5.9A5 5 0 0 1 2 5.9v6.27a3 3 0 0 1-2 5.66zm0 18.34a3 3 0 0 1 2 5.66v6.27A5 5 0 0 1 5.9 52h6.27a3 3 0 0 1 5.66 0H0V36.17zM36.17 52a3 3 0 0 1 5.66 0h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 0 1 0-5.66V52H36.17zM0 31.93v-9.78a5 5 0 0 1 3.8.72l4.43-4.43a3 3 0 1 1 1.42 1.41L5.2 24.28a5 5 0 0 1 0 5.52l4.44 4.43a3 3 0 1 1-1.42 1.42L3.8 31.2a5 5 0 0 1-3.8.72zm52-14.1a3 3 0 0 1 0-5.66V5.9A5 5 0 0 1 48.1 2h-6.27a3 3 0 0 1-5.66-2H52v17.83zm0 14.1a4.97 4.97 0 0 1-1.72-.72l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1 0-5.52l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43c.53-.35 1.12-.6 1.72-.72v9.78zM22.15 0h9.78a5 5 0 0 1-.72 3.8l4.44 4.43a3 3 0 1 1-1.42 1.42L29.8 5.2a5 5 0 0 1-5.52 0l-4.43 4.44a3 3 0 1 1-1.41-1.42l4.43-4.43a5 5 0 0 1-.72-3.8zm0 52c.13-.6.37-1.19.72-1.72l-4.43-4.43a3 3 0 1 1 1.41-1.41l4.43 4.43a5 5 0 0 1 5.52 0l4.43-4.43a3 3 0 1 1 1.42 1.41l-4.44 4.43c.36.53.6 1.12.72 1.72h-9.78zm9.75-24a5 5 0 0 1-3.9 3.9v6.27a3 3 0 1 1-2 0V31.9a5 5 0 0 1-3.9-3.9h-6.27a3 3 0 1 1 0-2h6.27a5 5 0 0 1 3.9-3.9v-6.27a3 3 0 1 1 2 0v6.27a5 5 0 0 1 3.9 3.9h6.27a3 3 0 1 1 0 2H31.9z'%3E%3C/path%3E%3C/svg%3E");
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #0c0cf3;
-    color: white;
-  }
-  
-  .topnav a.active {
-    background-color: #0c0cf3;
-    color: white;
-  }
-  
-  .topnav-right {
-    float: right;
-  }
+  background: url('../images/papertexture.jpg');
+}
 
-  #portfolio-container {
-    height: 100px;
-  }
-  
-  #portfolio1 {
-    float: right;
-    height: 100px;
-    width: 330px;
-  }
-  
-  #portfolio2{
-    float: right;
-    height: 100px;
-    width: 330px;
-  }
-  
-  #portfolio3 {
-    float: right;
-    height: 100px;
-    width: 330px;
-  }
-  
-  #main-content {
-    clear: both;
-    height: 100px;
-  }
+.container {
+  max-width: 900px;
+  margin:0 auto;
+}
+
+.container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+body > .container {
+  margin-top: 100px;
+}
+
+header {
+background: white;
+padding: 20px 0;
+border-bottom: 1px solid black;
+}
+
+h1 {
+   display: inline-block;
+   width: 30%;
+   font-family: sans-serif;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-bottom: 20px;
+  font-family: sans-serif;
+}
+
+p {
+  margin: 20px 0;
+  line-height: 140%; 
+}
+
+h2 {
+    font-size: 32px;
+    border-bottom: 6px #333;
+}
+
+ul {
+    margin-left: 20px;
+}
+
+nav {
+   display: inline-block;
+   width: 60%;
+   text-align: right;
+}
+
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+  font-family: sans-serif;
+  background: #333;
+  color: white;
+  padding: 10px 20px;
+  margin: 0 10px;
+  border-radius: 4px;
+}
+
+main,
+aside {
+  background: white;
+}
+
+main {
+  max-width: 59%;
+  float: left;
+  padding: 20px;
+  margin-right: 30px;
+}
+
+main img{
+  float: left;
+  margin-right: 30px;
+}
+
+aside {
+  float: left;
+  padding: 20px;
+}
+
+aside a {
+  text-decoration: none;
+}
+
+aside img {
+  box-shadow: 1px 1px 10px black;
+  border-radius: 10px;
+  margin: 0 5px;
+}
+
+footer{
+  text-align: center;
+  margin-top: 40px;
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
